@@ -1,0 +1,16 @@
+.container {
+   display: flex;
+   >div {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+      width: 50%;
+      .body {
+         padding: 20px;
+         >span, >a {
+            padding-right: 10px;
+         }
+      }
+      &:first-child {
+         margin-right: 15px;
+      }
+   }
+}

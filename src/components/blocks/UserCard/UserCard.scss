@@ -1,0 +1,94 @@
+@media (max-width: 1024px) {
+   .container {
+       .info {
+           flex-direction: column;
+           > div {
+               width: 100%;
+           }
+       }
+   }
+}
+
+@media (min-width: 1024px) {
+   .container {
+       .info {
+           > div {
+               width: 50%;
+           }
+       }
+   }
+}
+
+.delete {
+    color: red;
+    &:hover {
+        color: red;
+    }
+}
+
+.container {
+    input, :global(.react-phone-number-input__row) {
+        width: 70%;
+    }
+
+   .info {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       width: 100%;
+       margin-bottom: 13px;
+
+       >div {
+           padding-left: 19px;
+           padding-right: 19px;
+       }
+       h3 {
+           margin: 0 0 24px;
+           font-weight: 500;
+           // color: rgba(0,0,0,0.54);
+       }
+       dl {
+           display: flex;
+           flex-wrap: wrap;
+           margin-bottom: 0;
+
+           dt {
+               width: 51%;
+               padding-right: 10px;
+               margin-bottom: 17px;
+               color: rgba(0,0,0,0.54);
+           }
+           dd {
+               width: 49%;
+               margin: 0;
+               margin-bottom: 17px;
+               >span {
+                   margin: 0px 5px;
+                   cursor: pointer;
+               }
+           }
+       }
+
+   }
+
+}
+
+
+@media (min-width: 768px) {
+   .container {
+       .info {
+           dl {
+               display: flex;
+               flex-wrap: wrap;
+               margin-bottom: 0;
+
+               dt {
+                   width: 29.6%;
+               }
+               dd {
+                   width: 70%;
+               }
+           }
+       }
+   }
+}

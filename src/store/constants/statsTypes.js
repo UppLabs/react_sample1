@@ -1,0 +1,5 @@
+export const STATS = 'STATS';
+export const STATS_BRANDS = 'STATS_BRANDS';
+export const STATS_REPLENISH = 'STATS_REPLENISH';
+export const STATS_TOTALS = 'STATS_TOTALS';
+export const STATS_BRANDS_LOADING = 'STATS_BRANDS_LOADING';

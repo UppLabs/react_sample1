@@ -1,0 +1,56 @@
+.row {
+	margin-left: -6px;
+	margin-right: -6px;
+}
+
+.showing {
+	font-size: 14px;
+	color: #868686;
+	font-family: 'Roboto-Regular';
+	padding: 8px 11px;
+	padding-top: 0;
+}
+
+.drop_down {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+	font-family: 'Roboto-Medium';
+	border-bottom: 1px solid #e0e0e0;
+	border-top: 1px solid #e0e0e0;
+	padding: 15px 10px;
+	img {
+		margin-right: 5px;
+	}
+}
+
+.settings {
+	max-height: 0;
+	overflow: hidden;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all .1s;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+.empty {
+	display: flex;
+	height: 100%;
+}
+
+.settings.drop {
+	transition: all .3s;
+	transform: scaleY(1);
+	max-height: 100%;
+}
+
+.drop_down {
+	margin-bottom: 30px;
+}
+
+.wrapper_tools {
+	position: relative;
+}

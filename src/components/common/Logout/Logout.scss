@@ -1,0 +1,96 @@
+.logout {
+	position: absolute;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .5s;
+	top: 19px;
+	right: 9px;
+	padding: 0 12px;
+	&:before {
+		bottom: 100%;
+    	left: 81%;
+    	top: 0;
+    	border: solid transparent;
+    	content: " ";
+    	height: 0;
+    	width: 0;
+    	position: absolute;
+    	pointer-events: none;
+    	border-color: rgba(136, 183, 213, 0);
+    	border-bottom-color: #fff;
+    	border-width: 14px;
+    	margin-left: 5px;
+	}
+	&.open {
+		height: auto;
+		max-height: 222px;
+		padding-bottom: 12px;
+		// transition: max-height 1s;
+	}
+	.inner {
+		margin-top: 20px;
+		background-color: #fff;
+		border: 1px solid #c6c6c6;
+		border-radius: 2px;
+		box-shadow: 0px 1px 18px rgba(0, 0, 0, .25);
+		.info {
+			display: flex;
+			align-items: center;
+			cursor: default;
+			padding: 20px;
+			font-family: 'Roboto-Medium';
+			.person {
+				display: flex;
+				flex-direction: column;
+				margin-left: 20px;
+				span {
+					display: block;
+					font-size: 14px;
+					cursor: default;
+				}
+				span:first-child {
+					color: black;
+				}
+				span:last-child {
+					margin: 0;
+					a,
+					a:hover {
+						color: #999999;
+						text-decoration: none;
+					}
+				}
+			}
+			.logo {
+				height: 70px;
+				width: 70px;
+				border-radius: 50%;
+				background-color: black;
+			}
+		}
+		.out {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			padding: 10px 10px;
+			border-top: 1px solid #c6c6c6;
+			cursor: default;
+			background-color: #eeeeee;
+			span + span {
+				margin-left: 50px;
+			}
+			span {
+				border: 1px solid #c6c6c6;
+				padding: 9px 0;
+				text-align: center;
+				width: 96px;
+				font-family: 'Roboto-Medium';
+				font-size: 14px;
+				display: block;
+				color: #666666;
+			}
+		}
+	}
+}
+
+:global .to_panel .ic-account:before {
+  color: black; }

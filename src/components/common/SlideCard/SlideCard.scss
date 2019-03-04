@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    
+    .active {
+        transition: all .4s;
+    }
+    .inactive {
+        margin: 10px 10px;
+        margin-top: 0px;
+        transition: all .4s;
+    }
+    .top {
+        display: flex;
+        .left {
+            flex-grow: 1;
+        }
+        .right {
+            align-self: center;
+            a {
+                padding-left: 10px;
+            }
+        }
+    }
+    >div {
+        user-select: none;
+        width: 100%;
+        padding: 15px 19px 15px;
+        margin-bottom: 13px;
+        background: #fff;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+        cursor: pointer;
+        h4 {
+            margin: 0 0;
+        }
+        .body {
+            hr {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            div {
+                label {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .radioGroup {
+        display: flex;
+    }
+
+    .disabled {
+        cursor: not-allowed;
+    }
+}

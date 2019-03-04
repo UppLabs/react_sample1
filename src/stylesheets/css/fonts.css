@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('./../../fonts/Roboto/Roboto-Medium/Roboto-Medium.eot');
+	src: local('☺'), url('./../../fonts/Roboto/Roboto-Medium/Roboto-Medium.woff') format('woff'), url('./../../fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), url('./../../fonts/Roboto/Roboto-Medium/Roboto-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('./../../fonts/Roboto/Roboto-Regular/Roboto-Regular.eot');
+	src: local('☺'), url('./../../fonts/Roboto/Roboto-Regular/Roboto-Regular.woff') format('woff'), url('./../../fonts/Roboto/Roboto-Regular/Roboto-Regular.ttf') format('truetype'), url('./../../fonts/Roboto/Roboto-Regular/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('./../../fonts/Roboto/Roboto-Bold/Roboto-Bold.eot');
+	src: local('☺'),
+	url('./../../fonts/Roboto/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+	url('./../../fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf') format('truetype'),
+	url('./../../fonts/Roboto/Roboto-Bold/Roboto-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

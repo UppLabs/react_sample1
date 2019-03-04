@@ -1,0 +1,31 @@
+.navPanel {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 14px 7px;
+    min-height: 49px;
+    font-weight: 500;
+    flex: 1;
+
+	.navPanelBack {
+		padding: 0;
+		border: none;
+		outline: none;
+		background: none;
+		color: #303f9f;
+
+		svg {
+			vertical-align: middle;
+			margin: -3px 6px 0 0;
+			width: 22px;
+			height: 18px;
+		}
+
+	}
+	.navPanelBorder {
+		margin: 0 22px;
+		background: #a8775b;
+		width: 1px;
+		min-height: 33px;
+	}
+}

@@ -1,0 +1,47 @@
+.container-fluid {
+  padding: 0 64px;
+}
+
+.wrapper {
+	margin-top: 40px;
+	border-top: 1px solid #a8775b;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 0;
+		font-size: 12px;
+		color: #989898;
+		font-family: 'Roboto-Regular';
+	}
+}
+
+.welcome {
+	div:first-child {
+		span + span {
+			margin-left: 25px;
+		}
+		a {
+			text-decoration: underline;
+		}
+	}
+	div:last-child {
+		span + span {
+			margin-left: 25px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container-fluid {
+		padding: 0 5px;
+	}
+	.wrapper {
+		footer {
+			flex-direction: column;
+		}
+	}
+}

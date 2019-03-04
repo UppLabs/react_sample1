@@ -1,0 +1,49 @@
+.wrapper_welcome_block {
+	display: flex;
+	height: 90%;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 80px;
+	a {
+		width: 100%;
+	}
+}
+
+.container {
+   font-family: 'Roboto-Regular';
+   display: flex;
+   justify-content: center;
+
+   form {
+      >.form {
+         display: flex;
+         >div {
+            min-width: 300px;
+            margin-left:20px;
+            margin-right: 20px;
+         }
+      }
+      span {
+         font-size: 18px;
+         margin-left: 3px;
+      }
+      .buttons {
+         padding-top: 50px;
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   .requiredField {
+		font-size: 18px;
+		margin-left: 3px;
+
+		&:after {
+			content: '*';
+			color: red;
+			position: relative;
+			top: -2px;
+			left: 3px;
+		}
+	}
+}

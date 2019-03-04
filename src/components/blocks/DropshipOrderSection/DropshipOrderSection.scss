@@ -1,0 +1,56 @@
+.section {
+    .top, .bottom {
+        hr {
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+    }
+
+    .top {
+        >div {
+            display: flex;
+            justify-content: space-between;
+            .topLeft {
+                display: flex;
+                align-items: center;
+                button {
+                    &:first-child {
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .body {
+        .products {
+            display: flex;
+            flex-wrap: wrap;    
+        }
+    }
+    
+    
+    div {
+        >label {
+            >span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        .top {
+            >div {
+    
+                >.topLeft {
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-left: 0px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}

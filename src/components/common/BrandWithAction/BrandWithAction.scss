@@ -1,0 +1,62 @@
+.container {
+   display: flex;
+   flex-direction: row;
+   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+   background-color: #ecedef;
+   border-radius: 3px;
+   padding: 10px;
+   width: 430px;
+   height: 120px;
+   margin-right: 20px;
+
+   hr {
+      border: none;
+      border-left: 1px solid hsla(200, 10%, 50%,100);
+      height: auto;
+      width: 1px;       
+  }
+
+  .status {
+     display: flex;
+     flex: 2;
+     align-self: center;
+     text-transform: uppercase;
+
+     .text {
+       cursor: pointer;
+       &:hover {
+         text-decoration: underline;  
+       }
+     }
+
+     .icon {
+        padding-left: 10px;
+        padding-right: 20px;
+        font-size:26px;
+     }
+
+     :global {
+        .ic-check_circle {
+           color: #388e3c;
+        }
+        .ic-arrow_circle {
+          color: #a8775b;
+        }
+        .ic-watch {
+          color: #f57c00;
+        }
+     }
+     >span {
+       align-self: center;
+     }
+  }
+  .logo {
+     display: flex;
+     flex: 1.7;
+     align-self: center;
+     img {
+       height: 80px;
+       margin-left: 20px;
+     }
+  }
+}

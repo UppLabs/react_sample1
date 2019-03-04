@@ -1,0 +1,59 @@
+.retailerStats {
+    padding-bottom: 50px;
+    .container, .chartContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >div {
+            width: 100%;
+            margin-bottom: 13px;
+            background: #fff;
+            padding: 38px 41px 19px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+            min-height: 193px;
+            text-align: center;
+            h1 {
+                color: #a8775b;
+            }
+            span {
+                font-weight: 500;
+            }
+            h3 {
+                margin: 0 0;
+                text-align: left;
+            }
+            div {
+                overflow: auto;
+            }
+    }
+
+        .income {
+            background-image: url('../../../images/income.png');
+        }
+        .basket {
+            background-image: url('../../../images/basket.png');
+        }
+        .pie {
+            background-image: url('../../../images/pie_chart.png');
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .retailerStats {
+        .container {
+            >div {
+                width: calc(33% - 12px);
+                margin-bottom: 0;        
+            }
+        }
+        .chartContainer {
+            >div {
+                height: 100%;
+                width: calc(50% - 12px);
+                margin-top: 13px;
+                margin-bottom: 0; 
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+:global {
+	.icons_empty {
+		text-align: center;
+		margin-bottom: 15px;
+		.icons {
+			display: inline-block;
+			position: relative;
+			.search_icon {
+				font-size: 34px;
+			}
+			.fa-info {
+				position: absolute;
+				top: 7px;
+				right: 11px;
+			}
+		}
+	}
+}
+
+.empty {
+	font-family: 'Roboto-Regular';
+	margin: 0 auto;
+}

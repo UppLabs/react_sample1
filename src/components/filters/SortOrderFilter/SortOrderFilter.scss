@@ -1,0 +1,8 @@
+.sort {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	.down {
+		transform: scale(1, -1);
+	}
+}

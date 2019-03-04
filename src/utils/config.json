@@ -1,0 +1,6 @@
+{
+    "base_url": "/v3",
+    "token_url": "/oauth/token",
+    "env_production": "production",
+    "env_development": "development"
+}

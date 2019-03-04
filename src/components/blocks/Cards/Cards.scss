@@ -1,0 +1,57 @@
+.cards {
+	margin-bottom: 30px;
+
+	.perPage10 {
+		// min-height: 544px;
+		align-content: baseline;
+	}
+	.perPage20 {
+		// min-height: 1278px;
+		align-content: baseline;
+	}
+
+	.row {
+		margin-left: -6px;
+		margin-right: -6px;
+		.col-lg-1 {
+			padding-right: 6px;
+			padding-left: 6px;
+		}
+	}
+}
+
+@media (min-width: 1347px) {
+	.perPage10 {
+		min-height: 544px;
+	}
+	.perPage20 {
+		min-height: 1100px;
+	}
+}
+
+@media (max-width: 1347px) {
+	.perPage10 {
+		min-height: 822px;
+	}
+	.perPage20 {
+		min-height: 1278px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.perPage10 {
+		min-height: 1116px;
+	}
+	.perPage20 {
+		min-height: 1328px;
+	}
+}
+
+@media (max-width: 700px) {
+	.perPage10 {
+		min-height: 1317px;
+	}
+	.perPage20 {
+		min-height: 2637px;
+	}
+}

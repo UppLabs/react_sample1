@@ -1,0 +1,17 @@
+.container {
+   display: flex;
+   div {
+      display: flex;
+      flex: 2;
+      border-top: 1px solid #a8775b;
+      border-bottom: 1px solid #a8775b;
+      height: 4px;
+      align-self: center;
+   }
+   .title {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      font-weight: 600;
+   }
+}

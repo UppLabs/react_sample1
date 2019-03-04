@@ -1,0 +1,36 @@
+.container {
+   position: relative;
+   width: 100%;
+   padding: 10px;
+   margin: 0;
+   overflow: hidden;
+   height: 46px;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+   border: 1px solid rgba(0, 0, 0, 0);
+   border-radius: 3px;
+   margin-top: 10px;
+   &.error {
+      border: 1px solid red;
+      padding-top: 13px;
+      padding-bottom: 14px;
+      &:before {
+         position: absolute;
+         right: 15px;
+         top: 15px;
+         color: red;
+      }
+   }
+}
+
+.container select {
+   width: 110%;
+   border: none;
+   box-shadow: none;
+   background-color: transparent;
+   background-image: none;
+   line-height: 20px;
+}
+
+.container select:focus {
+   outline: none;
+}

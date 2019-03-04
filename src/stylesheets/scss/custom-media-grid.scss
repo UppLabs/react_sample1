@@ -1,0 +1,153 @@
+:global {
+
+.container-fluid {
+	width: 100%;
+	padding: 0 64px;
+}
+
+.column {
+	position: relative;
+	float: left;
+	padding-left: 6px;
+	padding-right: 6px;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 320px) {
+	.container-fluid {
+		padding: 0 5px;
+	}
+	.column {
+		width: 50%;
+		display: flex;
+		align-items: right;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+
+	.row {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		display: flex;
+		flex-wrap: wrap;
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+
+	.vertical-indent {
+		& > [class="column"]:not(:nth-child(n+3)) {
+			padding-top: 0;
+		}
+		& > [class~="column"]:nth-child(n+3){
+       		padding-top: 3px;
+    	}
+	}	
+}
+
+@media (min-width: 700px) {
+	.container-fluid {
+		width: 100%;
+		padding: 0 15px;
+    }
+	.column {
+		width: 33.3333333333%;
+		display: block;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.row {
+		margin-right: -6px !important;
+		margin-left: -6px !important;
+		display: block;
+	}
+
+	.vertical-indent {
+		& > [class="column"]:not(:nth-child(n+4)) {
+			padding-top: 0;
+		}
+		& > [class~="column"]:nth-child(n+4){
+       		padding-top: 24px;
+    	}
+	}	
+}
+
+@media (min-width: 1024px) {
+	.container-fluid {
+		width: 100%;
+		padding: 0 64px;
+    }
+
+	.column {
+		width: 25%;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+	.row {
+		margin-right: -6px !important;
+		margin-left: -6px !important;
+	}
+
+	.vertical-indent {
+		& > [class="column"]:not(:nth-child(n+5)) {
+			padding-top: 0;
+		}
+		& > [class~="column"]:nth-child(n+5){
+       		padding-top: 12px;
+    	}
+	}	
+}
+
+@media (min-width: 1350px) {
+	.column {
+		width: 20%;
+	}
+
+	.vertical-indent {
+		& > [class="column"]:not(:nth-child(n+6)) {
+			padding-top: 0;
+		}
+		& > [class~="column"]:nth-child(n+6){
+       		padding-top: 12px;
+    	}
+	}	
+}
+
+@media (min-width: 1650px) {
+	.column {
+		width: 16.66666666666%;
+	}
+
+	.vertical-indent {
+		& > [class="column"]:not(:nth-child(n+7)) {
+			padding-top: 0;
+		}
+		& > [class~="column"]:nth-child(n+7){
+       		padding-top: 12px;
+    	}
+	}
+}
+
+@media (min-width: 1750px) {
+	.column {
+		width: 14.285714285714%;
+	}
+
+	.vertical-indent {
+		& > [class="column"]:not(:nth-child(n+8)) {
+			padding-top: 0;
+		}
+		& > [class~="column"]:nth-child(n+8){
+       		padding-top: 12px;
+    	}
+	}
+}
+}

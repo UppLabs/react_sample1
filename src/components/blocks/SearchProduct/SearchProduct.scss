@@ -1,0 +1,33 @@
+.wrapper_search {
+	margin: 60px 30px;
+	text-align: center;
+	.ic-search {
+		position: absolute;
+		left: 17px;
+		top: 10px;
+		&:before {
+			color: #757575;
+			font-size: 23px;
+		}
+	}
+}
+
+.find_search {
+	font-size: 24px;
+	font-family: 'Roboto-Regular';
+	color: #424242;
+	margin-bottom: 25px;
+}
+
+.search {
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	input {
+		width: 100%;
+		border: 1px solid #bfbfbf;
+		border-radius: 4px;
+		padding: 11px 55px;
+		font-family: 'Roboto-Regular';
+	}
+}

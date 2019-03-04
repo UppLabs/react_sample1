@@ -1,0 +1,208 @@
+  .retailers {
+      margin-bottom: 55px;
+  }
+  
+  @media (max-width: 767px) {
+      .container-fluid {
+              padding: 0 15px;
+          }
+  }
+  
+  @media (max-width: 460px) {
+          .container-fluid {
+              padding: 0 5px;
+          }
+      }
+  
+  @media (max-width: 700px) {
+      .approve {
+          margin-top: 75px;
+      }
+  }
+  
+  @media (max-width: 1024px) {
+      .container-fluid {
+              padding: 0 15px;
+          }
+  }
+  
+  @media (max-width: 460px) {
+          .container-fluid {
+              padding: 0 5px;
+          }
+      }
+  
+  @media (max-width: 700px) {
+      .approve {
+              margin-top: 75px;
+          }
+  }	  
+
+.singleRetailer {
+	padding: 50px 0;
+	font-size: 14px;
+	line-height: 17px;
+
+	.status {
+		&:first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	.singleRetailerTop {
+		margin: 0 auto 59px;
+		max-width: 230px;
+		font-weight: 700;
+		text-align: center;
+		font-size: 24px;
+	}
+	.singleRetailerName {
+		display: block;
+		margin-bottom: 16px;
+		font-weight: 400;
+		font-size: 20px;
+	}
+	.singleRetailerLogo {
+		max-width: 200px;
+		margin: 0 auto 28px;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.singleRetailerBtn {
+		margin-top: 49px;
+		width: 100%;
+	}
+	.singleRetailerInfo {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		>div {
+			width: 100%;
+			padding: 38px 19px 12px;
+			margin-bottom: 13px;
+			background: #fff;
+			box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+		}
+		h3 {
+			margin: 0 0 24px;
+			text-transform: uppercase;
+			font-weight: 500;
+			color: rgba(0,0,0,0.54);
+		}
+		dl {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+
+			dt {
+				width: 51%;
+				padding-right: 10px;
+				margin-bottom: 17px;
+				color: rgba(0,0,0,0.54);
+			}
+			dd {
+				width: 49%;
+				margin: 0;
+				margin-bottom: 17px;
+			}
+		}
+
+	}
+	.singleRetailerStatus {
+		color: green;
+	}
+
+	dd {
+		display: flex;
+		&.erpidEdit {
+			.edit {
+				padding-left: 0px;
+			}
+			.erpid {
+				align-self: center;
+				+ .edit {
+					padding-left: 12px;
+				}
+			}
+
+			input {
+				+ .edit {
+					padding-left: 12px;
+				}
+			}
+		}
+		a {
+			align-self: center;
+		}
+		.edit {
+			font-size: 18px;
+			align-self: center;
+			cursor: pointer;
+			padding-left: 12px;
+		}
+	}
+
+	:global(.pendingStatus) {
+		color: #d50000;
+	}
+	:global(.toolbar) {
+		margin-bottom: 30px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.singleRetailer {
+		.singleRetailerLogo {
+			margin: 0 auto 31px;
+		}
+		.singleRetailerInfo {
+			>div {
+				padding: 38px 19px 19px;
+				margin-bottom: 24px;
+			}
+			dl {
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 0;
+
+				dt {
+					width: 29.6%;
+				}
+				dd {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.singleRetailer {
+		.singleRetailerLogo {
+			margin: 0 auto 29px;
+		}
+		.singleRetailerBtn {
+			margin-top: 50px;
+		}
+		.singleRetailerInfo {
+			>div {
+				width: calc(50% - 12px);
+				margin-bottom: 0;
+				padding: 38px 41px 19px;
+			}
+			dl {
+				dt {
+					width: 26.3%;
+				}
+				dd {
+					width: 70%;
+				}
+			}
+		}
+	}
+}

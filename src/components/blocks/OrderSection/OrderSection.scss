@@ -1,0 +1,94 @@
+.section {
+    .top, .bottom {
+        hr {
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+    }
+
+    .top {
+        >div {
+            display: flex;
+            justify-content: space-between;
+
+            .topRight {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button {
+                    &:first-child{
+                        margin-right: 25px;
+                        margin-left:12px;
+                    }
+                }
+            }
+            .topLeft {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                div {
+                    padding-left:12px;
+                }
+                a {
+                    padding: 0 20px;
+                    cursor: pointer;
+                    &.max {
+                        color: #5965b2;
+                    }
+                    &.clear {
+                        color: #d81111;
+                    }
+                }
+            }
+        }
+        .addition {
+            user-select: none;
+            min-width: 140px;
+        }
+    }
+
+    .body {
+        margin-right: 6px;
+        margin-left: 6px;
+        h4 {
+            text-align: left;
+            margin: 10px 10px;
+        }
+    }
+    
+    
+    div {
+        >label {
+            >span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        .top {
+            >div {
+                flex-direction: column;
+    
+                >.topLeft {
+                    >div {
+                        width: 100%;
+                        justify-content: space-between;
+                        padding-left: 0px;
+                        label {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                >.topRight {
+                    button:first-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

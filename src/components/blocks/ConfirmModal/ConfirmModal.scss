@@ -1,0 +1,13 @@
+.body {
+	padding: 10px;
+	span {
+		font-family: 'Roboto-Regular';
+		font-size: 16px;
+		display: block;
+	}
+	.buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 15px;
+	}
+}

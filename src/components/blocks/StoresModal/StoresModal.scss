@@ -1,0 +1,34 @@
+.body {
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+
+    .table {
+        input {
+            width: 100px;
+        }
+    }
+    .icon {
+        cursor: pointer;
+        font-size: 18px;
+        color: #1155cc;
+    }
+}
+
+.footer {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+
+   .info {
+        color: #d50000;
+        align-self: center;
+        span {
+            padding-right: 10px;
+        }
+    }
+   button {
+       &:first-child {
+           margin-right: 20px;
+       }
+   }
+}

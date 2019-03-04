@@ -1,0 +1,158 @@
+.resultsProduct {
+	box-shadow: 1px 2px 11px rgba(0, 0, 0, .4);
+	border-radius: 5px;
+	overflow: hidden;
+	transition: all .3s;
+	cursor: pointer;
+	width: 100%;
+	position: relative;
+	&:hover {
+		box-shadow: 1px 5px 12px rgba(0, 0, 0, .4);	
+	}
+	img {
+		max-height: 230px;
+		max-width: 100%;
+	}
+	> div {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-between;
+		div.img_block {
+			text-align: center;
+			min-height: 150px;
+			&.img_hover {
+				position: relative;
+				.slide {
+					display: flex !important;
+					justify-content: center;
+				}
+			}
+		}
+
+	}
+}
+
+.wp {
+	display: block;
+
+	.top {
+		user-select: none;
+		display: flex;
+		margin: 10px 10px;
+		position: absolute;
+		z-index: 1;
+		>div {
+			display: flex;
+			&:first-child{
+				flex-grow: 1;
+			}
+		}
+		a {
+			display: flex;
+		}
+	}
+}
+
+.desc {
+	padding: 10px 10px;
+	text-align: center;
+	font-family: 'Roboto-Regular';
+	font-size: 16px;
+	min-height: 84px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	.pt {
+		min-height: 48px;
+		text-align: center;
+	}
+	.price {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-self: center;
+		span {
+			font-size: 14px;
+			color: #b28874;
+			strong {
+				color: black;
+			}
+		}
+		&.dropship {
+			justify-content: center;
+		}
+	}
+}
+
+.details {
+	font-family: 'Roboto-Regular';
+	font-size: 12px;
+	padding: 10px;
+	border-top: 1px solid #dddddd;
+	text-align: center;
+	p {
+		color: black;
+		&:last-child {
+			color: #878787;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 1850px) {
+	.desc {
+		text-align: left;
+	}
+}
+
+@media (max-width: 1700px) {
+	.desc {
+		p {
+			text-align: center;
+		}
+		.price {
+			// align-items: start;
+			// flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 1450px) {
+	.desc {
+		text-align: left;
+		min-height: 104px;
+		p {
+			text-align: left;
+		}
+		.price {
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 410px) {
+	.desc {
+		flex-grow: 1;
+		display: flex;
+		justify-content: space-between;
+		.pt {
+			// min-height: 66px;
+		}
+	}
+	.wp {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	.resultsProduct {
+		height: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	.img_block {
+		display: flex;
+		align-items: center;
+	}
+}

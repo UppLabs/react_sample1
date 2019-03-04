@@ -1,0 +1,16 @@
+.os-scrollbar .os-scrollbar-track {
+	background: rgba(0, 0, 0, .2) !important;
+	width: 1px !important;
+}
+
+.os-scrollbar .os-scrollbar-track .os-scrollbar-handle {
+	width: 3px !important;
+	left: -1px !important;
+	opacity: 1 !important;
+	background: #676767 !important;
+	border-radius: 2px !important;
+}
+
+.os-scrollbar-vertical {
+	right: 6px !important;
+}

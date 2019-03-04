@@ -1,0 +1,107 @@
+.container {
+    font-size: 14px;
+    max-height: 47px;
+    min-height: 34px;
+    min-width: 88px;
+    line-height: 1.4em;
+    padding: 6px 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+    display: inline-flex;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    
+    &:hover {
+        background-color: #303f9f;
+    }
+
+    &:focus {
+        outline-style: none;
+    }
+    &:disabled {
+        background-color: #eeeeee;
+        color: #6d6d6d;
+    }
+    &.disabled {
+        border: none;
+        &:hover {
+            background-color: #eeeeee;
+        }
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.common:hover {
+    box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.25);
+}
+
+.transparent {
+    background-color: rgba(0, 0, 0, 0);
+    color: #d50000;
+    border: 1px solid #d50000;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.margin_left {
+    margin-left: 10px;
+}
+
+.green {
+    color: #fff;
+    background-color: #388e3c;
+    &.full_width {
+        width: 100%;
+    }
+    &:hover {
+       background-color: #388e3c; 
+    }
+}
+
+.red {
+    color: #fff;
+    background-color: #d50000;
+    &:hover {
+       background-color: #d50000; 
+    }
+    &.border {
+        background-color: #fff;
+        border: 1px solid #d50000;
+        color: #d50000;
+        &:hover {
+            background-color: #fff;
+            color: #d50000;
+        }
+    }
+}
+
+.orange {
+    color: #fff;
+    background-color: #f57c00;
+    &:hover {
+       background-color: #f57c00;
+    }
+}
+
+.white {
+    color: #d50000;
+    background-color: #fff;
+    border: 1px solid #d50000;
+    &:hover {
+       background-color: #fff;
+    }
+}
+.margin {
+    margin: 0 10px;
+}
+.alignSelf {
+    align-self: center;
+}

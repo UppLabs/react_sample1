@@ -1,0 +1,15 @@
+.footer {
+   display: flex;
+   padding-top: 20px;
+   >button {
+       &:first-child {
+           margin-right: 20px;
+       }
+   }
+}
+
+.body {
+    h3 {
+        padding-top: 5px;
+    }
+}

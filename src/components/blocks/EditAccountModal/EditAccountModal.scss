@@ -1,0 +1,97 @@
+.footer {
+   display: flex;
+   padding-top: 20px;
+   >button {
+       &:first-child {
+           margin-right: 20px;
+       }
+   }
+}
+
+.body {
+    padding-right: 300px;
+
+    a {
+        cursor: pointer;
+    }
+
+    .cards {
+        div {
+            display: flex;
+            cursor: pointer;
+            >span {
+                align-self: center;
+                &:first-child {
+                    font-size: 34px;
+                    padding-right: 10px;
+                }
+                &:hover + a {
+                    display: block;
+                }
+            }
+            a {
+                display: none;
+                align-self: center;
+                padding-left: 10px;
+                &:hover {
+                    display: block;
+                }
+            }
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    }
+   h3 {
+      padding-bottom: 5px;
+   }
+   label {
+      display: block;
+      >span:first-child {
+        display: block;
+         font-weight: bold;
+         padding: 10px 0px;
+         a {
+             padding-left: 10px;
+             font-weight: normal;
+         }
+      }
+      >span:nth-child(2) {
+          padding-left: 10px;
+      }
+      :global(.rrui__select__button), :global(.rrui__input-field) {
+        border: none;
+      }
+      :global(.react-phone-number-input__icon) {
+          border: none;
+          height: auto;
+      }
+      >input, :global(.react-phone-number-input), .cards>input {
+         display: block;
+         padding: 10px 10px;
+         min-width: 320px;
+         border: 1px solid #e0e0e0;
+      }
+   }
+}
+
+@media (max-width: 700px) {
+    .body {
+        padding-right: 0;
+        label {
+            >input {
+                min-width: 300px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .body {
+        max-width: 240px;
+        label {
+            >input {
+                min-width: 240px;
+            }
+        }
+    }
+}

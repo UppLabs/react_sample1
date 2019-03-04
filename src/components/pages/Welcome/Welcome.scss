@@ -1,0 +1,16 @@
+.wrapper_welcome_block {
+	display: flex;
+	height: 95%;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 120px;
+	a {
+		width: 100%;
+	}
+	p {
+		color: #a8775b;
+		font-size: 47px;
+		font-family: 'Roboto-Bold';
+		margin-bottom: 10px;
+	}
+}

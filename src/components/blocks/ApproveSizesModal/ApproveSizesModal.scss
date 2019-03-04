@@ -1,0 +1,90 @@
+.body {
+   display: flex;
+
+   .sizeCell {
+      display: flex;
+      justify-content: space-around;
+   }
+   
+   .product {
+      display: flex;
+      border: 1px solid #eeeeee;
+      padding-top: 10px;
+
+      >div {
+         align-self: center;
+      }
+      
+		.img_block {
+			text-align: center;
+         img {
+            width: 170px;
+         }
+		}
+      .desc {
+         padding: 10px 10px;
+         text-align: center;
+         font-family: 'Roboto-Regular';
+         font-size: 16px;
+         min-height: 84px;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         .pt {
+            min-height: 44px;
+            text-align: center;
+            max-width: 170px;
+         }
+         .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+               font-size: 14px;
+               color: #b28874;
+               strong {
+                  color: black;
+               }
+            }
+         }
+      }
+      .details {
+         font-family: 'Roboto-Regular';
+         font-size: 12px;
+         padding: 10px;
+         border-top: 1px solid #dddddd;
+         text-align: center;
+         p {
+            color: black;
+            &:last-child {
+               color: #878787;
+            }
+         }
+      }
+   }
+
+   .table {
+      padding-left: 10px;
+   }
+}
+
+.footer {
+   display: flex;
+   justify-content: flex-end;
+   >button {
+       &:first-child {
+           margin-right: 20px;
+       }
+   }
+}
+
+.ic-sort {
+	display: inline-block;
+	left: 10px;
+	font-size: 21px;
+    position: relative;
+    top: 4px;
+}
+.ic-sort.down {
+	transform: scale(1, -1);
+}

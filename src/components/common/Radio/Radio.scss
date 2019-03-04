@@ -1,0 +1,25 @@
+.container {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+    	align-items: center;
+    
+	input {
+        	display: none;
+		&:checked {
+			+div {
+                		color: #388e3c;
+			}
+		}
+	}
+
+	>div {
+        	font-size: 24px;
+	}
+	.label {
+		padding-left: 5px;
+		padding-right: 10px;
+		font-size: 14px;
+	}
+}
+

@@ -1,0 +1,114 @@
+.assign {
+	font-size: 18px;
+	font-family: 'Roboto-Medium';
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 8px 11px;
+}
+
+.panel {
+	display: flex;
+	padding-top: 5px;
+	user-select: none;
+	a {
+		padding-left: 5px;
+		padding-right: 10px;
+	}
+	.clear {
+		color: red;
+	}
+}
+
+.search_retailers {
+	position: relative;
+	margin: 15px 0;
+	overflow: hidden;
+	&.results {
+		overflow: inherit;
+		div.active {
+			background-color: #dfdfdf;
+		}
+	}
+}
+
+.autocomplete {
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	z-index: 3;
+	.results {
+		border: 1px solid #dfdfdf;
+		border-radius: 4px;
+		> div {
+			padding: 3px 10px;
+			font-family: 'Roboto-Regular';
+			cursor: pointer;
+		}
+		> div:hover {
+			background-color: #dfdfdf;
+		}
+	}
+}
+
+.retailers_checkbox {
+	margin: 15px 0;
+	input {
+		width: 100%;
+		border: 1px solid #dfdfdf;
+		padding: 3px 10px;
+		border-radius: 4px;
+	}
+
+	.main_checkbox {
+		padding: 15px 15px;
+		border-bottom: 1px solid #dfdfdf;
+		.check_all {
+			margin-left: 7px;
+		}
+		label {
+			margin-left: 0;
+			span {
+				font-size: 16px;
+				font-family: 'Roboto-Medium';
+			}
+		}
+	}
+
+	.assign_retailers {
+		padding: 0 15px;
+		margin: 15px 0;
+		max-height: 197px;
+		overflow: hidden;
+		min-height: 26px;
+		label {
+			margin-left: 0;
+		}
+	}
+}
+
+.assign_button {
+	background-color: #388e3c;
+	width: 100%;
+	padding: 9px 0;
+	botder-radius: 5px;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+.home {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.products {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@media (max-width: 992px) {
+	.assign {
+		display: none;
+	}
+}

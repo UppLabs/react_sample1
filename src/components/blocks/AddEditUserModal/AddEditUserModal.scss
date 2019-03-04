@@ -1,0 +1,89 @@
+.footer {
+   display: flex;
+   padding-top: 20px;
+   >button {
+       &:first-child {
+           margin-right: 20px;
+       }
+   }
+}
+
+.body {
+    padding-right: 300px;
+
+    a {
+        cursor: pointer;
+    }
+
+   label {
+      display: block;
+      >span:first-child {
+        display: block;
+         font-weight: bold;
+         padding: 10px 0px;
+         a {
+             padding-left: 10px;
+             font-weight: normal;
+         }
+      }
+      >span:nth-child(2) {
+          padding-left: 10px;
+      }
+      :global(.rrui__select__button), :global(.rrui__input-field) {
+        border: none;
+      }
+      :global(.react-phone-number-input__icon) {
+          border: none;
+          height: auto;
+      }
+      >input, :global(.react-phone-number-input), >select {
+         display: block;
+         padding: 10px 10px;
+         min-width: 320px;
+         border: 1px solid #e0e0e0;
+      }
+      >select {
+        background: transparent;
+        display: block;
+        padding: 10px 10px;
+        min-width: 320px;
+        height: 42px;
+        border-radius: 0px;
+        -webkit-appearance: none;
+        background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+        background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - 2.5em) 0.5em;
+        background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.5em;
+        background-repeat: no-repeat;
+      }
+   }
+}
+
+@media (max-width: 700px) {
+    .body {
+        padding-right: 0;
+        label {
+            >input {
+                min-width: 300px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .body {
+        max-width: 240px;
+        label {
+            >input {
+                min-width: 240px;
+            }
+        }
+    }
+}

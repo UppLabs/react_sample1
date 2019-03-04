@@ -1,0 +1,63 @@
+:global {
+	.Selectable {
+		.DayPicker-Day--selected {
+			&:not(.DayPicker-Day--start) {
+				&:not(.DayPicker-Day--end) {
+					&:not(.DayPicker-Day--outside) {
+						background-color: #cfe2ce  !important;
+    					color: black !important;
+					}
+				}
+			}
+		}
+	}
+
+	.DayPicker-Day--selected {
+		&:not(.DayPicker-Day--disabled) {
+			&:not(.DayPicker-Day--outside) {
+				background-color: #388e3c !important;
+			}
+		}
+	}
+
+	.Selectable {
+		.DayPicker-Day {
+			border-radius: 0 !important;
+		}
+  	}
+  .Selectable {
+  	.DayPicker-Day--start {
+  		border-top-left-radius: 50% !important;
+    	border-bottom-left-radius: 50% !important;
+  	}
+  }
+  .Selectable {
+  	.DayPicker-Day--end {
+  		border-top-right-radius: 50% !important;
+    	border-bottom-right-radius: 50% !important;
+  	}
+  }
+}
+
+.range {
+	display: block;
+	font-family: 'Roboto-Medium';
+	text-align: center;
+	padding: 15px 0;
+	p {
+		font-size: 14px;
+		font-family: 'Roboto-Regular';
+		text-align: center;
+	}
+}
+
+.selected_date {
+	display: block;
+	text-align: center;
+}
+
+.tools {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}

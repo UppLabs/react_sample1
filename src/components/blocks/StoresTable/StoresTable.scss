@@ -1,0 +1,9 @@
+.users {
+   color: #1155cc;
+   cursor: pointer;
+   span {
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}

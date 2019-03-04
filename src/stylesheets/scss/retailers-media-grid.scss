@@ -1,0 +1,227 @@
+:global {
+
+.row {
+	margin-left: -12px;
+	margin-right: -12px;
+	display: flex;
+}
+
+.column_filter_retailer,
+.column_products_retailers {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.column_filter_retailer {
+	float: left;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.column_products_retailers {
+	width: 71.42857142857%;
+	float: left;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.row {
+		margin-right: -12px;
+		margin-left: -12px;
+	}
+}
+
+	.product_retailer {
+		width: 20%;
+		float: left;
+		padding-left: 12px;
+		padding-right: 12px;
+}
+
+@media (min-width: 320px) {
+	
+	.column_products_retailers {
+		.row {
+			margin: 0;
+		}
+	}
+
+	.column_filter_retailer {
+		width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.product_retailer {
+		width: 50%;
+		float: left;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+	.column_products_retailers {
+		width: 100%;
+		padding: 0;
+	}
+
+	.column_products_retailers {
+		.vertical-indent {
+		& > [class="product_retailer"]:not(:nth-child(n+3)) {
+			padding-top: 0;
+		}
+		& > [class~="product_retailer"]:nth-child(n+3){
+       		padding-top: 12px;
+    	}
+	}
+	}
+}
+
+@media (min-width: 600px) {
+	.column_filter_retailer {
+		width: 100%;
+	}
+
+	.column_products_retailers {
+		width: 100%;
+	}
+
+	.product_retailer {
+		width: 33.33333333%;
+		float: left;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.column_products_retailers {
+		.vertical-indent {
+		& > [class="product_retailer"]:not(:nth-child(n+4)) {
+			padding-top: 0;
+		}
+		& > [class~="product_retailer"]:nth-child(n+4){
+       		padding-top: 24px;
+    	}
+	}
+	}
+}
+
+@media (min-width: 700px) {
+	.column_products_retailers {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.column_filter_retailer {
+		width: 24.285714%;
+	}
+
+	.column_products_retailers {
+		width: 75.714285%;
+	}
+
+	.product_retailer {
+		width: 33.3333333%;
+		float: left;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.column_products_retailers {
+		.vertical-indent {
+		& > [class="product_retailer"]:not(:nth-child(n+4)) {
+			padding-top: 0;
+		}
+		& > [class~="product_retailer"]:nth-child(n+4){
+       		padding-top: 24px;
+    	}
+	}
+	}
+}
+
+@media (min-width: 1225px) {
+	.column_filter_retailer {
+		width: 20.285714%;
+	}
+
+	.column_products_retailers {
+		width: 79.714285%;
+	}
+
+	.product_retailer {
+		width: 25%;
+		float: left;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.column_products_retailers {
+		.vertical-indent {
+		& > [class="product_retailer"]:not(:nth-child(n+5)) {
+			padding-top: 0;
+		}
+		& > [class~="product_retailer"]:nth-child(n+5){
+       		padding-top: 24px;
+    	}
+	}
+	}
+}
+
+@media (min-width: 1450px) {
+	.column_filter_retailer {
+		width: 18.285714%;
+	}
+
+	.column_products_retailers {
+		width: 81.714285%;
+	}
+
+	.product_retailer {
+		width: 20%;
+		float: left;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.column_products_retailers {
+		.vertical-indent {
+		& > [class="product_retailer"]:not(:nth-child(n+6)) {
+			padding-top: 0;
+		}
+		& > [class~="product_retailer"]:nth-child(n+6){
+       		padding-top: 24px;
+    	}
+	}
+	}
+}
+
+@media (min-width: 1850px) {
+	.product_retailer {
+		width: 16.66666666%;
+		float: left;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.column_filter_retailer {
+		width: 14.285714285714%;
+	}
+
+	.column_products_retailers {
+		width: 85.628571%;
+		.vertical-indent {
+		& > [class="product_retailer"]:not(:nth-child(n+7)) {
+			padding-top: 0;
+		}
+		& > [class~="product_retailer"]:nth-child(n+7){
+       		padding-top: 24px;
+    	}
+	}
+	}
+}
+}

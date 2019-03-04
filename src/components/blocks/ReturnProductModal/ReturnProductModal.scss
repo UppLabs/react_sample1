@@ -1,0 +1,109 @@
+.footer {
+   display: flex;
+   padding-top: 20px;
+   justify-content: flex-end;
+   >button {
+       &:first-child {
+           margin-right: 20px;
+       }
+   }
+}
+
+.header {
+    font-family: 'Roboto-Regular'; 
+
+    thead {
+        tr {
+            th {
+                white-space: pre-line;
+            }
+        }
+    }
+}
+
+.body {
+    font-family: 'Roboto-Regular'; 
+
+    .warning {
+        color: #d50000;
+    }
+    .details {
+        .title {
+            display: block;
+            font-weight: 600;
+        }
+        >div {
+            display: flex;
+            flex-direction: row;
+            dl {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                align-content: baseline;
+    
+                dt {
+                    width: 51%;
+                    padding-right: 10px;
+                    margin-bottom: 17px;
+                    color: #000000;
+                }
+                dd {
+                    width: 49%;
+                    margin: 0;
+                    margin-bottom: 17px;
+                    color: rgba(0,0,0,0.54);
+                }
+            }
+        }
+    }
+    .switcher {
+        padding: 30px 20px;
+        padding-top: 10px;
+        div {
+            label {
+                padding-right: 40px;
+            }
+        }
+    }
+    >.form {
+        padding-top: 30px;
+        label {
+            display: block;
+            >span:first-child {
+              display: block;
+               font-weight: bold;
+               padding: 10px 0px;
+               a {
+                   padding-left: 10px;
+                   font-weight: normal;
+               }
+            }
+            >span:nth-child(2) {
+                padding-left: 10px;
+            }
+            >input, textarea{
+               width: 40%;
+               display: block;
+               padding: 10px 10px;
+               min-width: 320px;
+               border: 1px solid #e0e0e0;
+            }
+            >textarea {
+                height: 100px;
+            }
+         }
+    }
+
+
+   .info {
+      display: flex;
+      padding-top: 10px;
+      span {
+         padding-right: 5px;
+         align-self: center;
+      }
+      :global(.ic-info) {
+         color: #f57c00;
+      }
+   }
+}

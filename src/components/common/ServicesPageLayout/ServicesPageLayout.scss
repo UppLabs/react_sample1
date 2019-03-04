@@ -1,0 +1,7 @@
+.wrapper {
+  display: block;
+	margin-top: -125px;
+	> div:first-child {
+		margin-bottom: 0;
+	}
+}

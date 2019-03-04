@@ -1,0 +1,18 @@
+.preloader {
+   height: 30px;
+   width: 30px;
+   margin: 40vh auto;
+   border: 7px solid rgba(0,0,0,0.77);
+   border-top: 7px solid #f57c00;
+   border-radius: 50%;
+   animation: rotate 700ms infinite linear;
+ }
+ 
+ @keyframes rotate {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }

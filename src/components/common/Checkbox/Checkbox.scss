@@ -1,0 +1,53 @@
+.container {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	.checkboxInput {
+		display: none;
+	}
+	input {
+		&:checked {
+			+div {
+				&.checkboxIcon {
+					color: #388e3c;
+				}
+			}
+		}
+	}
+
+	>div {
+		&.checkboxIcon {
+			font-size: 24px;
+		}
+	}
+	.label {
+		padding-left: 5px;
+	}
+
+	.formattedLabel {
+		color: #388e3c;
+		&.black {
+			color: black;
+		}
+	}
+
+	.count {
+		background-color: #f57c00;
+		padding: 1px 4px;
+		border-radius: 3px;
+		color: white;
+		font-size: 12px;
+		margin-left: 15px;
+	}
+
+	.count_zero {
+		background-color: #000000;
+		padding: 1px 4px;
+		border-radius: 3px;
+		color: white;
+		font-size: 12px;
+		margin-left: 15px;
+	}
+}
+

@@ -1,0 +1,57 @@
+.ic-sort {
+	display: inline-block;
+	top: 4px;
+	left: 10px;
+	font-size: 21px;
+	position: relative;
+}
+.ic-sort.down {
+	transform: scale(1, -1);
+}
+
+.status {
+	border: 0;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-family: "Roboto-Medium";
+	color: white;
+	padding: 2.5% 4%;
+	white-space: normal;
+}
+
+.returned {
+	background-color: #d50000;
+	// &:after {
+	// 	content: 'Products returned';
+	// 	display: inline;
+	// }
+}
+
+.partialReturned {
+	background-color: #f57c00;
+}
+
+.expandRow {
+	height: 100%;
+	td {
+		height: 100%;
+	}
+}
+
+// @media (max-width: 1561px) {
+// 	.returned {
+// 		&:after {
+// 			font-size: 12px;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 1470px) {
+// 	.returned {
+// 		&:after {
+// 			content: "PR";
+// 			font-size: 14px;
+// 			padding: 4px 5px;
+// 		}
+// 	}
+// }

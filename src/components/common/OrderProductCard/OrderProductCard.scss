@@ -1,0 +1,102 @@
+.container {
+	box-shadow: 1px 2px 11px #00000066;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+    .numInput {
+        width: 50px;
+        height: 25px;
+    }
+}
+
+.images_block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+	img {
+	    max-width: 200px;
+	    height: auto;
+    }
+}
+
+.wrapper_desc {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.desc {
+	padding: 10px 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto-Regular';
+	font-size: 16px;
+	flex-grow: 1;
+	white-space: pre-wrap;
+	p:first-child {
+		flex-grow: 1;
+	}
+	.price {
+		span {
+			font-size: 14px;
+			color: #b28874;
+			strong {
+				color: black;
+			}
+		}
+	}
+}
+
+.details {
+	font-family: 'Roboto-Regular';
+	font-size: 12px;
+	padding: 10px;
+	border-top: 1px solid #dddddd;
+	text-align: center;
+	p {
+		color: black;
+		&:last-child {
+			color: #878787;
+		}
+	}
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+:global {
+    .react-numeric-input {
+        margin-right: 10px;
+    }
+}
+
+// @media (max-width: 1150px) {
+// 	.desc {
+// 		font-size: 14px;
+// 	}
+// }
+
+// @media (max-width: 768px) {
+// 	.mobile {
+// 		width: 100%;
+// 		border-bottom: 1px solid #dddddd;
+// 		padding: 12px 12px;
+// 	}
+// 	.container {
+// 		box-shadow: none;
+
+// 		>div:first-child {
+// 			float: left;
+// 			img {
+// 				width: 160px;
+// 			}
+// 		}
+// 		.details {
+// 			border: none;
+// 		}
+// 	}
+// }

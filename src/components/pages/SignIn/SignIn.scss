@@ -1,0 +1,58 @@
+.wrapper_signin_block {
+	display: flex;
+	height: 200%;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 120px;
+	width: 100%;
+	font-size: 14px;
+	p {
+		font-size: 14px;
+	}
+}
+
+.settings {
+	display: flex;
+	justify-content: flex-end;
+	margin: 13px 0;
+	p {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		a {
+			text-decoration: underline;
+			font-size: 14px;
+		}
+	}
+}
+
+p.title {
+	color: #a8775b;
+	font-size: 47px;
+	font-family: 'Roboto-Bold';
+}
+.signup {
+	a {
+		color: black;
+		text-decoration: underline;
+			font-size: 14px;
+	}
+}
+
+.form {
+	max-width: 490px;
+	width: 100%;
+	margin-top: 20px;
+	.submit_button {
+		text-align: right;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span.errorMessage {
+    		color: red;
+    	}
+	}
+	input {
+		width: 100%;
+	}
+}

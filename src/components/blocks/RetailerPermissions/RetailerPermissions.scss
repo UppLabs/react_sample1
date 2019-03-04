@@ -1,0 +1,121 @@
+.container {  
+    button {
+        margin-bottom: 20px;
+        float: right;
+    }
+    .shipping {
+        display: flex;
+        >div {
+            align-self: center;
+        }
+        >span:nth-child(3) {
+            align-self: center;
+            padding-right: 10px;
+        }
+    }
+}
+.toolbarContainer {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        margin: 0 0;
+    }
+    button {
+        margin-left: 10px;
+    }
+}
+.navTop {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+    >div {
+        align-self: flex-end;
+        margin-bottom: 10px;
+    }
+
+}
+
+:global {
+    .tab-content {
+        padding-bottom: 20px;
+        >.tab-pane {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    .nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        >li {
+            align-self: center;
+            padding: 8px 5px;
+            margin: 0 15px;
+            cursor: pointer;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+
+            &.active {
+                border-bottom: 3px solid #388e3c;
+
+                a {
+                    color: #388e3c;
+                }
+            }
+            a {
+                color: #000;
+                &:focus{
+                    outline-style: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 470px) {
+    .navTop {
+        flex-direction: row;
+
+        >div {
+            align-self: center;
+            margin-bottom: 0;
+        }
+
+    }
+}
+@media (max-width: 600px) {
+
+    .toolbarContainer {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        button {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        > div {
+            flex-direction: column;
+            > div:first-child {
+                display: flex;
+                align-items: center;
+                min-height: 47px;
+            }
+        }
+    }
+    :global {
+        .nav {
+            >li {
+                font-size: 15px;
+            }
+        }
+    }
+}

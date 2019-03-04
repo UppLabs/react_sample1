@@ -1,0 +1,186 @@
+:global {
+    .to_panel {
+        .ic-dashboard {
+            &:before {
+                color: black;
+            }
+        }
+    }
+}
+
+.roles {
+    font-family: 'Roboto-Medium';
+    font-size: 14px;
+    img {
+        &.logo {
+            height: 100px;
+        }
+    }
+
+    user-select: none;
+    position: absolute;
+    color:#333333;
+    top: 19px;
+    min-width: 200px;
+    right: -70px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+    padding: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:after, &:before {
+        bottom: 100%;
+        left: 50%;
+        top: 0;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: white;
+        border-width: 14px;
+        margin-left: 5px;
+    }
+
+    &.open {
+        height: auto;
+        max-height: 1000px;
+        transition: max-height 1.4s;
+    }
+    >div {
+        margin-top: 20px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+        border: 1px solid #c6c6c6;
+        width: 444px;
+        ul {
+            max-height: 280px;
+            overflow: auto;
+            padding: 0 0;
+            list-style: none;
+            background-color: white;
+            margin-bottom: 0px;
+            &.max768 {
+                max-height: 560px;
+            }
+            &.main {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                >li {
+                    cursor: pointer;
+                    display: flex; 
+                    padding: 20px;
+                    justify-content: center;
+                    align-self: center;
+                    text-align: center;
+                    span {
+                        display: flex;
+                        align-self: center;
+                    }
+                    &:hover {
+                        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+
+        .more {
+            display: flex;
+            border-top: 1px solid #c6c6c6;
+            background-color: #eeeeee;
+            justify-content: center;
+            padding: 15px 10px;
+
+            a {
+                color: #333333;
+            }
+            &.none {
+                display: none;
+            }
+        }
+    }
+}
+
+.rightRoles {
+
+    &.brands {
+        right: -22px;
+
+        &:before,
+        &:after {
+            right: 85px;
+        }          
+    }
+
+    &.replenish {
+        right: -10px;
+        
+        &:before,
+        &:after {
+            right: 46px;
+        }          
+    }
+
+    &.dropship {
+        right: -10px;
+        
+        &:before,
+        &:after {
+            right: 7px;
+        }     
+    }
+
+    &.admin {
+        right: -10px;
+        
+        &:before,
+        &:after {
+            right: 7px;
+        }            
+    }
+
+    &:before,
+    &:after {
+        left: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .roles {
+        right: -21px;
+        &:after, &:before {
+            left: 58%;
+        }
+    }
+
+    .rightRoles {
+        right: 22px;
+
+        &:before,
+        &:after {
+            left: auto;
+            right: 8px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .roles {
+        right: 12px;
+    }
+
+    .rightRoles {
+        right: 57px;
+
+        &:before,
+        &:after {
+            left: auto;
+            right: 7px;
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.container {
+    text-transform: uppercase;
+    font-family: "Roboto-Medium";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        + {
+            div {
+                margin-left: 10.5%;
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        background-color: #f57c00;
+        padding: 5px 8px;
+        margin-left: 15px;
+        color: white;
+        font-size: 12px;
+        font-family: "Roboto-Regular";
+        border-radius: 3px;
+    }
+    .zero {
+        background-color: #000;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 48px;
+    }
+}

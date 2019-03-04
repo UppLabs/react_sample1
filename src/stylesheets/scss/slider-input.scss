@@ -1,0 +1,77 @@
+:global {
+	.ant-slider-vertical {
+		width: 36px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		.ant-slider-rail,
+		.ant-slider-track {
+			width: 36px !important;
+			border-radius: 0 !important;
+		}
+		.ant-slider-track {
+			background-color: #a8775b !important;
+		}
+		.ant-slider-track:hover {
+			background-color: #a8775b !important;
+		}
+		.ant-slider-track {
+			border-top: 1px solid white !important;
+		}
+		.ant-slider-handle {
+			display: none !important;
+		}
+	}
+
+	.ant-input-number {
+		width: 40px !important;
+		height: 40px !important;
+		margin-left: 0 !important;
+		border-radius: 0 !important;
+	}
+
+	.ant-input-number-input {
+		width: 100% !important;
+		height: 20px !important;
+		margin-top: 9px !important;
+		position: relative !important;
+		z-index: 100 !important;
+		text-align: center !important;
+	}
+
+	.ant-slider-rail {
+		border-radius: 0 !important;
+		background-color: #b9927c !important;
+	}
+
+	.ant-slider.ant-slider-vertical:hover {
+		background-color: #b9927c !important;
+		.ant-slider-track {
+			background-color: #a8775b !important;
+		}
+	}
+
+	.ant-input-number-handler-wrap {
+		opacity: 1 !important;
+		border-left: 0 !important;
+		width: 100% !important;
+
+		.ant-input-number-handler-down {
+			top: 18px !important;
+			border-top: 0 !important;
+		}
+
+		.ant-input-number-handler-up,
+		.ant-input-number-handler-down {
+			height: 10px !important;
+			 span {
+				position: static !important;
+				margin-top: 0 !important;
+			}
+		}
+	
+		.ant-input-number-handler-up:hover,
+		.ant-input-number-handler-down:hover {
+			height: 10px !important;
+		}
+	}
+}
